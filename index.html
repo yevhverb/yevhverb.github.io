@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Yevhenii</title>
+   <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/styles.css">
+   <style>
+      html {
+         font-family: 'Rubik', sans-serif;
+         font-size: calc(10px + 0.33vw);
+         font-weight: 300;
+      }
+      body {
+         margin: 0;
+         color: #333;
+      }
+      article {
+         padding: 5vh 11vw;
+      }
+      h1, h2 {
+         font-weight: 500;
+      }
+      h1 {
+         font-size: 4.5em;
+         margin-bottom: 0;
+      }
+      h2 {
+         font-size: 2.2em;
+      }
+      p {
+         font-size: 1.7em;
+         line-height: 1.4;
+         max-width: 24em;
+      }
+      li {
+         list-style-type: circle;
+         font-size: 1.7em;
+      }
+      a {
+         position: relative;
+         text-decoration: none;
+         color: inherit;
+         z-index: 1;
+      }
+      a::before,
+      a::after {
+         content: '';
+         position: absolute;
+         width: 104%;
+         height: 10%;
+         left: -2%;
+         z-index: -1;
+         background: rgba(255,215,0, .4);
+         transition: .225s;
+         opacity: .75
+      }
+      a::before {
+         top: 57.5%;
+      }
+      a:hover::before {
+         height: 47.5%;
+         opacity: 1
+      }
+      a::after {
+         bottom: 42.5%;
+      }
+      a:hover::after {
+         height: 57.5%;
+         opacity: 1
+      } 
+   </style>
+</head>
+<body>
+   <article>
+      <h1>Hello.</h1>
+      <h2>My name is Yevhenii.</h2>
+      <p>I am beginner front-end developer, passionate about learning development single-page applications.</p>
+      <p>My personal projects:</p>
+      <ul>
+         <li><a href="https://yevhverb.github.io/notes/" target="_blank">Notes</a></li>
+         <li><a href="https://yevhverb.github.io/casino-slots/" target="_blank">Casino slots</a></li>
+      </ul>
+      <p>You can also see some non-commercial <a href="https://drive.google.com/drive/folders/1PqU_vdB-TOtMiMj3v6P78MLdcKQAj6pW" target="_blank">projects</a> that I developed.</p>
+      <p>Me on <a href="https://github.com/yevhverb" target="_blank">GitHub</a> and <a href="https://codepen.io/yevhverb/" target="_blank">Codepen</a>.</p>
+      <p>You can <a href="mailto:yevh.verb@gmail.com" target="_blank">сontact me</a>.</p>
+   </article>
+</body>
+</html>
