@@ -1,0 +1,16 @@
+tippy.setDefaults({
+   theme: 'light',
+   arrow: true,
+   placement: 'right',
+   distance: 30,
+   animation: 'scale',
+   interactive: true,
+});
+
+const elems = ['casino-slots', 'notes', 'cvstore', 'caring-service', 'escape', 'my-letter'];
+
+elems.forEach(el => {
+   tippy(`#${el}`, {
+      content: document.querySelector(`.${el}`).innerHTML
+   });
+});

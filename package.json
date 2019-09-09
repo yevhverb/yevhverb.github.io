@@ -1,0 +1,24 @@
+{
+	"name": "yevhverb.github.io",
+	"version": "1.0.0",
+	"description": "personal page",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/yevhverb/yevhverb.github.io.git"
+	},
+	"author": "@yevhverb",
+	"license": "ISC",
+	"devDependencies": {
+		"gulp": "^4.0.2",
+		"gulp-clean": "^0.4.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-concat-css": "^3.1.0",
+		"gulp-cssnano": "^2.1.3",
+		"gulp-rename": "^1.4.0",
+		"gulp-terser": "^1.2.0"
+	},
+	"dependencies": {
+		"popper.js": "^1.15.0",
+		"tippy.js": "^4.3.5"
+	}
+}
