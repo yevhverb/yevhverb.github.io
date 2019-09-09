@@ -56,7 +56,7 @@ gulp.task('all-min', gulp.series('js-min', 'css-min'), done => {
 }); 
 
 gulp.task('clean', done => {
-	gulp.src('dist/*', {read: false})
+	gulp.src('docs/*', {read: false})
 	.pipe(clean());
 
 	done();
@@ -64,16 +64,16 @@ gulp.task('clean', done => {
 
 gulp.task('copy', done => {
 	gulp.src('src/css/**/*')
-	.pipe(gulp.dest('dist/css'));
+	.pipe(gulp.dest('docs/css'));
 
 	gulp.src('src/js/**/*')
-	.pipe(gulp.dest('dist/js'));
+	.pipe(gulp.dest('docs/js'));
 
 	gulp.src(['src/*.html'])
-	.pipe(gulp.dest('dist/'));
+	.pipe(gulp.dest('docs/'));
 
 	gulp.src(['src/favicon.*'])
-	.pipe(gulp.dest('dist/'));
+	.pipe(gulp.dest('docs/'));
 
 	done();
 });
