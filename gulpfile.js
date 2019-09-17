@@ -2,9 +2,9 @@ const gulp      = require('gulp'),
       concat    = require('gulp-concat'),
       terser    = require('gulp-terser'),
       cssnano   = require('gulp-cssnano'),
-		concatCss = require('gulp-concat-css'),
-		rename	 = require('gulp-rename'),
-		clean     = require('gulp-clean');
+			concatCss = require('gulp-concat-css'),
+			rename	  = require('gulp-rename'),
+			clean     = require('gulp-clean');
 
 gulp.task('concat-js', done => {
    gulp.src([
