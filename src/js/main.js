@@ -7,7 +7,7 @@ tippy.setDefaults({
    interactive: true,
 });
 
-const elems = ['casino-slots', 'notes', 'cvstore', 'caring-service', 'dr-qi', 'escape'];
+const elems = ['casino-slots', 'docket', 'notes', 'cvstore', 'caring-service', 'dr-qi', 'escape'];
 
 elems.forEach(el => {
    tippy(`#${el}`, {
