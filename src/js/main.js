@@ -4,24 +4,22 @@ tippy.setDefaults({
   placement: 'right',
   distance: 30,
   animation: 'scale',
-  interactive: true
+  interactive: true,
 });
 
 const elems = [
+  'casts',
   'filtrum',
   'jq',
   'petshop',
   'casino-slots',
   'docket',
-  'notes',
-  'cvstore',
   'caring-service',
   'dr-qi',
-  'escape'
 ];
 
-elems.forEach(el => {
+elems.forEach((el) => {
   tippy(`#${el}`, {
-    content: document.querySelector(`.${el}`).innerHTML
+    content: document.querySelector(`.${el}`).innerHTML,
   });
 });
